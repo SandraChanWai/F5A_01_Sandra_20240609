@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 0.3px solid white;
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+            backdrop-filter: saturate(180%) blur(5px);
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header h2 {
+    color: white
+}
+
+header span {
+    background-color: rgb(181, 224, 237);
+    color: black;
+    padding: 2px;
+    border-radius: 7px;
+}
+
+
+nav, ul {
+    gap: 20px;
+    display: flex;
+}
+
+ul li {
+  list-style: none;
+  text-align: left;
+}
+
+li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+li > a:hover {
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 0.3px solid white;
+}
+
+main {
+    height: auto;
+    background: url("https://i.imgur.com/dJO0H3o.jpeg");
+    background-repeat: no-repeat;
+    -o-border-image: fill 0 linear-gradient(#0001, #000);
+       border-image: fill 0 linear-gradient(#0001, #000);
+    background-size: cover;
+}
+
+.profile {
+    text-align: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.profile img {
+    width: 180px;
+    margin-top: 100px;
+    border-radius: 50%;
+}
+
+.profile h3 {
+    color: rgb(181, 224, 237);
+}
+
+.profile h5 {
+    color: white;
+   text-decoration: underline;
+}
+
+.redes, .butao {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+}
+
+.redes a {
+    color: white;
+    margin-left: 35px;
+    font-size: 20px;
+}
+
+.botao button {
+    margin: 20px;
+    border: 0.2px solid white;
+    padding: 8px;
+    height: 36px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    border-radius: 17px;
+    color: white;
+    background-color: transparent;
+    -webkit-backdrop-filter: saturate(180%) blur(30px);
+            backdrop-filter: saturate(180%) blur(30px);
+    transition: 0.3s;
+}
+
+.botao button:hover {
+   transform: scale(1.1);
+   background-color: white;
+   color: black;
+   font-weight: 700;
+}
+
+h6 {
+    color: transparent;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    margin: 20px;
+}
+
+.descr1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.intro {
+    justify-content: space-around;
+    display: flex;
+}
+
+.sobre {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+.habilidades {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+
+}
+
+.container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -1px;
+  }
+
+  .column {
+    row-gap: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column img {
+      width: 100px;
+      height: 100px;
+      background-color: #000;
+      border-radius: 20px;
+    }
+
+.serviço {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: rgba(108, 105, 255, 0.181);
+
+}
+
+.titulo1 {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(108, 105, 255, 0.181);
+}
+
+.titulo2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.titulo2 > a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+}
+
+.vertical1{
+  flex-direction: column;
+}
+.vertical2{
+  flex-direction: column;
+}
+.vertical3{
+  flex-direction: column;
+}
+.card {
+    width: 280px;
+    height: 550px;
+    padding: 15px;
+    background-color: rgb(8, 8, 20);
+    color: white;
+    border-radius: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* Ajuste o espaço entre os itens conforme necessário */
+}
+
+.grid img {
+    width: 500px;
+    border-radius: 20px;
+    display: none;
+}
+
+
+.container-grid {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contatos {
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    color: white;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    border-top: none;
+}
+
+.form {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    border-right: 1px solid rgb(255, 252, 252);
+}
+
+.form input {
+    width: 300px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form button {
+    width: 300px;
+    background-color: rgb(64, 64, 123);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+}
+
+.form button:hover {
+    transform: scale(1.05);
+    background-color: rgb(72, 137, 210);
+}
+
+.ACABE {
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.color {
+    background-color: rgb(30, 30, 30);
+}
+
+.acabe2 {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 20px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.acabe2 a {
+    text-decoration: none;
+    color: #000;
+    colour: white;
+}
+
+footer {
+    background-color: rgb(64, 64, 123);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+}
+
+.category-button {
+  background: none;
+  padding: 3px;
+  border: none;
+  width: 120px;
+  height: 50px;
+  font-size: 16px;
+}
+
+.category-button.active {
+    background-color: rgb(181, 224, 237);
+/*     color: white; */
+    padding: 3px;
+    border-radius: 10px;
+}
